@@ -10,16 +10,27 @@
   top: 0;
   right: 0;
   display: none;
+  width: 100%
 }
 .mobileButtons a {
   width: 24px;
   height: 24px;
   padding: 16px;
   display: block;
-  background: url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center #aaa;
+  background:  url(++resource++ftw.mobilenavigation/mobile_buttons.png) no-repeat center center red;
   float: right;
 }
  
+.mobileButtons a.selected {
+  background-color: #333;
+}
+.mobileButtons #toggle_slidenavi,
+.mobileButtons #toggle_navigation {
+  background-position: 16px 16px;
+}
+.mobileButtons #toggle_usermenu { background-position: 16px -56px; }
+.mobileButtons #toggle_search { background-position: 16px -128px; }
+
 
 /* @end group */
 
@@ -88,22 +99,22 @@ div.slideNavi.loading,
  
 
 #portal-globalnav.mobileNavigation li a.loadChildren  {
-background: url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
+background: transparent url(++resource++ftw.mobilenavigation/expandme-navi.png) no-repeat center center;
 position: absolute;
  width: 60px;
  font-size: 1px;
  padding-left: 0;
  padding-right: 0;
  top:  0;
- right: 0px;
+ right: 1px;
       
  }
 #portal-globalnav.mobileNavigation li.expanded > a.loadChildren {
-  background: url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
+  background: transparent  url(++resource++ftw.mobilenavigation/collapseme-navi.png) no-repeat center center;
 
 }
 #portal-globalnav.mobileNavigation li.loading > a.loadChildren {
-  background: url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
+  background: transparent  url(++resource++ftw.mobilenavigation/spinner.gif) no-repeat center center;
 }
 #portal-globalnav.mobileNavigation li > ul {
   display: none;
